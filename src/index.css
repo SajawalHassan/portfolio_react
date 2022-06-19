@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .menu-link {
+    @apply w-screen py-6 font-bold border-t border-zinc-800 hover:text-[#13B5D2] hover:bg-zinc-800 transition-colors duration-500;
+  }
+}
+
+.menu-animation {
+  animation: 500ms menu-animation;
+}
+
+@keyframes menu-animation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
