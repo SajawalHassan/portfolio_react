@@ -6,17 +6,14 @@ function Header() {
   const [menu, setMenu] = useState(false);
 
   return (
-    <div className="px-4 py-2 flex items-center justify-between sticky top-0 z-50">
+    <div className="px-4 py-2 flex items-center justify-between sticky top-0 z-50 bg-[#292828]">
       <div className="p-1">
         <a href="/" className="text-pink-600 text-2xl font-extrabold">
           <span className="text-white font-light">I'm</span> Sajawal
         </a>
       </div>
       <div>
-        <div
-          className="p-1 bg-[#242323] cursor-pointer"
-          onClick={() => setMenu(true)}
-        >
+        <div className="p-1 cursor-pointer" onClick={() => setMenu(true)}>
           <MenuIcon className="h-10 text-white" />
         </div>
         {menu && (
@@ -46,13 +43,25 @@ function Header() {
             </div>
 
             <div className="h-[70vh] grid place-content-center text-center">
-              <a className="menu-link" href="#about">
+              <a
+                className="menu-link"
+                href="#about"
+                onClick={() => setMenu(false)}
+              >
                 About Me
               </a>
-              <a className="menu-link" href="#my-skills">
+              <a
+                className="menu-link"
+                href="#my-skills"
+                onClick={() => setMenu(false)}
+              >
                 My Skills
               </a>
-              <a className="menu-link border-b" href="#contact">
+              <a
+                className="menu-link border-b"
+                href="#contact"
+                onClick={() => setMenu(false)}
+              >
                 Contact
               </a>
             </div>
