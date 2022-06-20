@@ -4,10 +4,10 @@
 
 @layer components {
   .menu-link {
-    @apply w-screen py-6 font-bold border-t border-zinc-800 hover:text-[#13B5D2] hover:bg-zinc-800 transition-colors duration-500;
+    @apply w-screen py-6 font-bold border-t border-zinc-800 hover:text-[#13B5D2] hover:bg-zinc-800 transition-colors duration-500 cursor-pointer;
   }
   .section {
-    @apply shadow-md shadow-[#13B5D2] border-t border-[#13B5D2] rounded-lg text-white my-10 py-4 mx-8 px-3;
+    @apply rounded-lg text-white my-10 py-4 mx-8 px-3 max-w-[80vw];
   }
   .section-heading {
     @apply text-[2.9rem] font-bold text-transparent bg-gradient-to-r from-[#13B5D2] to-blue-600 bg-clip-text;
@@ -17,6 +17,12 @@
   }
   .section-btn {
     @apply px-10 py-2 mt-5 bg-transparent font-bold border-2 border-[#08FDD8] text-[#08FDD8] hover:bg-[#08FDD8] transition-colors duration-500 hover:text-black w-max cursor-pointer;
+  }
+  .contact-input {
+    @apply py-3 px-2 bg-zinc-800 w-[70%] outline-none;
+  }
+  .bar-animation {
+    @apply h-[1px] group-focus-within:-translate-x-[0%] bg-[#13B5D2] -translate-x-[100%] transition-transform duration-500;
   }
 }
 
@@ -34,6 +40,10 @@ body {
   animation: 500ms show-more-animation;
 }
 
+.email-sent-animation {
+  animation: 500ms email-sent-animation;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -41,6 +51,10 @@ body {
 ::-webkit-scrollbar-thumb {
   background: rgb(87, 87, 87);
   border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(128, 126, 126);
 }
 
 ::-webkit-scrollbar-track {
@@ -61,6 +75,15 @@ body {
     opacity: 0;
   }
 
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes email-sent-animation {
+  0% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }

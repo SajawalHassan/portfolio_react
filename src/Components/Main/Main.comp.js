@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-scroll";
+
 function Main() {
   return (
     <div
@@ -16,7 +18,9 @@ function Main() {
       <p className="mt-5 text-zinc-600 font-serif">
         Fullstack Developer / Game Developer
       </p>
-      <button className="section-btn">Contact me!</button>
+      <Link smooth={true} to="contact" className="section-btn cursor-pointer">
+        Contact me!
+      </Link>
     </div>
   );
 }

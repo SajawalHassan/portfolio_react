@@ -15,7 +15,7 @@ function About() {
           </p>
 
           <p>
-            In web-development I learned alot of stuff like html, css
+            In web-development I learned alot of stuff like HTML5, CSS3,
             javascript, reactjs, express, mongodb, node and much more. It was a
             long journey, a journey that took 2 years as of writing this; but
             this journey isn't done.

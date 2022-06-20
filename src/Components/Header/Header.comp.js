@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import S from "../../Images/S.png";
 
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import S from "../../Images/S.png";
+import { Link } from "react-scroll";
 
 function Header() {
   const [menu, setMenu] = useState(false);
@@ -9,9 +10,13 @@ function Header() {
   return (
     <div className="px-4 py-2 flex items-center justify-between sticky top-0 z-50 bg-[#292828]">
       <div className="p-1">
-        <a href="#main" className="text-pink-600 text-2xl font-extrabold">
+        <Link
+          to="main"
+          smooth={true}
+          className="text-pink-600 text-2xl font-extrabold cursor-pointer"
+        >
           <span className="text-white font-light">I'm</span> Sajawal
-        </a>
+        </Link>
       </div>
       <div>
         <div className="p-1 cursor-pointer" onClick={() => setMenu(true)}>
@@ -36,34 +41,38 @@ function Header() {
             </div>
 
             <div className="h-[70vh] grid place-content-center text-center">
-              <a
+              <Link
                 className="menu-link"
-                href="#about"
+                to="about"
+                smooth={true}
                 onClick={() => setMenu(false)}
               >
                 About Me
-              </a>
-              <a
+              </Link>
+              <Link
                 className="menu-link"
-                href="#my-skills"
+                to="my-skills"
+                smooth={true}
                 onClick={() => setMenu(false)}
               >
                 My Skills
-              </a>
-              <a
+              </Link>
+              <Link
                 className="menu-link"
-                href="#projects"
+                to="projects"
+                smooth={true}
                 onClick={() => setMenu(false)}
               >
                 My Projects
-              </a>
-              <a
+              </Link>
+              <Link
                 className="menu-link border-b"
-                href="#contact"
+                to="contact"
+                smooth={true}
                 onClick={() => setMenu(false)}
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         )}

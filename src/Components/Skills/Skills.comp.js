@@ -12,21 +12,23 @@ function Skills() {
         <div className="section-description">
           <p>
             I started my coding journey nearly 2 years ago and at the time of
-            writing I have learned technologies such as ReactJS, NextJS,
+            writing I have learned technologies such as ReactJS, NextJS, Redux,
             TailwindCss, Html, Css, Godot, Python, Open-cv, Mediapipe, Django,
             Express, Mongodb and Javascript
           </p>
           <p>
             Right now I don't do any sort of work I just make projects for
-            myself and have fun with them.
+            myself and have fun with them. But I would be happy to do small work
+            as a freelancer.
           </p>
         </div>
         <div className="mt-10 space-y-5">
-          <SkillsBar text="Html5" percent="95" />
-          <SkillsBar text="Css3" percent="90" />
+          <SkillsBar text="HTML5" percent="95" />
+          <SkillsBar text="CSS3" percent="90" />
+          <SkillsBar text="Redux / Redux Toolkit" percent="88" />
           <SkillsBar text="Express" percent="85" />
-          <SkillsBar text="ReactJs" percent="83" />
-          <SkillsBar text="Mongodb" percent="80" />
+          <SkillsBar text="ReactJS" percent="83" />
+          <SkillsBar text="MongoDB" percent="80" />
           {!showMore ? (
             <h1
               className="section-btn py-1 px-5 mx-auto"
