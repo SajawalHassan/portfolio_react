@@ -3,7 +3,7 @@ import React from "react";
 function ProjectsCard({ projectName, description, path }) {
   return (
     <div
-      className="p-4 bg-zinc-800 w-full hover:shadow-md hover:shadow-black transition-all duration-300 border-t-4 border-[#13B5D2] rounded-md"
+      className="p-4 h-[12rem] w-full bg-zinc-800 hover:shadow-md hover:shadow-[#13B5D2] transition-all duration-300 border-t-4 border-[#13B5D2] rounded-md"
       title="View on Github"
     >
       <a href={`${path}`} target="_blank" rel="noreferrer">

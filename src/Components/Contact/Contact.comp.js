@@ -1,5 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -88,13 +91,38 @@ function Contact() {
             ></textarea>
             <div className="bar-animation"></div>
           </div>
-          <button
-            type="submit"
-            className="section-btn absolute right-0"
-            onClick={(e) => sendEmail(e)}
-          >
-            Send Message
-          </button>
+          <div className="flex items-center space-x-4 relative">
+            <button
+              type="submit"
+              className="section-btn absolute right-0 -top-4"
+              onClick={(e) => sendEmail(e)}
+            >
+              Send Message
+            </button>
+            <div className="flex items-center space-x-2 mt-2">
+              <a
+                href="https://github.com/SajawalHassan"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GitHubIcon />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCkjFnHCmmZtYVFvosxef3yg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <YouTubeIcon />
+              </a>
+              <a
+                href="https://twitter.com/scientificninj2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <TwitterIcon />
+              </a>
+            </div>
+          </div>
         </form>
       </div>
       {emailSent && (

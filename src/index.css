@@ -4,10 +4,10 @@
 
 @layer components {
   .menu-link {
-    @apply w-screen py-6 font-bold border-t border-zinc-800 hover:text-[#13B5D2] hover:bg-zinc-800 transition-colors duration-500 cursor-pointer;
+    @apply w-screen md:w-full py-6 font-bold border-t border-zinc-800 hover:text-[#13B5D2] hover:bg-zinc-800 transition-colors duration-500 cursor-pointer;
   }
   .section {
-    @apply rounded-lg text-white my-10 py-4 mx-8 px-3 max-w-[80vw];
+    @apply rounded-lg text-white my-10 py-4 mx-8 px-3 max-w-[80vw] lg:max-w-[65%] lg:mx-auto 2xl:max-w-[55%];
   }
   .section-heading {
     @apply text-[2.9rem] font-bold text-transparent bg-gradient-to-r from-[#13B5D2] to-blue-600 bg-clip-text;
@@ -24,12 +24,14 @@
   .bar-animation {
     @apply h-[1px] group-focus-within:-translate-x-[0%] bg-[#13B5D2] -translate-x-[100%] transition-transform duration-500;
   }
+  .header-link {
+    @apply text-white font-bold p-1 cursor-pointer hover:-translate-y-[2px] transition-transform duration-500;
+  }
 }
 
 body {
   overflow-x: hidden;
   background-image: linear-gradient(to bottom right, #313131, #141414);
-  scroll-behavior: smooth;
 }
 
 .menu-animation {

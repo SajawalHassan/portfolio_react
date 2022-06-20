@@ -6,7 +6,7 @@ function Skills() {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div id="my-skills" className="mt-[50%] pt-[5%]">
+    <div id="my-skills" className="mt-[50%] pt-[1%]">
       <section className="section">
         <h1 className="section-heading">My Skills</h1>
         <div className="section-description">
@@ -54,7 +54,7 @@ function Skills() {
             </div>
           )}
         </div>
-        <div className="mt-10  mx-auto w-[90%] space-y-5">
+        <div className="mt-10  mx-auto space-y-5">
           <SkillsCard
             title="Fullstack developer"
             description="Fullstack developer making projects like the Twitter clone, Reddit
