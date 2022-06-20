@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import S from "../../Images/S.png";
 
 function Header() {
   const [menu, setMenu] = useState(false);
@@ -27,17 +28,9 @@ function Header() {
                 onClick={() => setMenu(false)}
               />
             </div>
-            <div className="h-[20%]">
-              <div className="relative grid place-content-center h-[80%] w-full">
-                <h1 className="text-7xl font-bold text-pink-600 z-20 absolute left-[46%] top-[18%]">
-                  S
-                </h1>
-                <h1 className="text-7xl font-bold text-[#13B5D2] absolute left-[46%] top-[20%] z-10">
-                  S
-                </h1>
-                <h1 className="text-3xl font-bold mt-[5rem]">Sajawal</h1>
-              </div>
-              <p className="-mt-2 text-zinc-500 text-center font-serif">
+            <div className="h-[20%] relative grid place-content-center">
+              <img src={S} alt="" className="" />
+              <p className="text-zinc-500 text-center font-serif">
                 Web developer
               </p>
             </div>
@@ -56,6 +49,13 @@ function Header() {
                 onClick={() => setMenu(false)}
               >
                 My Skills
+              </a>
+              <a
+                className="menu-link"
+                href="#projects"
+                onClick={() => setMenu(false)}
+              >
+                My Projects
               </a>
               <a
                 className="menu-link border-b"

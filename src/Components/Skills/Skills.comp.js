@@ -52,7 +52,7 @@ function Skills() {
             </div>
           )}
         </div>
-        <div className="mt-10 mb-5 mx-auto w-[90%] space-y-5">
+        <div className="mt-10  mx-auto w-[90%] space-y-5">
           <SkillsCard
             title="Fullstack developer"
             description="Fullstack developer making projects like the Twitter clone, Reddit
