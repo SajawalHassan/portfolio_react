@@ -8,6 +8,10 @@ function Projects() {
     <div className="mt-[50%]" id="projects">
       <div className="section max-w-[80%]">
         <h1 className="section-heading">My Projects</h1>
+        <p className="section-description">
+          Not all of the projects I built are listed here but there is one from
+          every category.
+        </p>
         <div className="mt-10 space-y-5">
           <div className="mt-5 mx-auto">
             <div className="w-[90%] space-y-8 xl:grid xl:grid-cols-2 xl:space-y-0 xl:gap-8">
