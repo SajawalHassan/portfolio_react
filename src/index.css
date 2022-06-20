@@ -46,6 +46,10 @@ body {
   animation: 500ms email-sent-animation;
 }
 
+.bar-error-aniamtion {
+  animation: 300ms bar-error-aniamtion;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -88,5 +92,14 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes bar-error-aniamtion {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }

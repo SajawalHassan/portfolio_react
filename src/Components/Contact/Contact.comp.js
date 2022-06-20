@@ -18,8 +18,6 @@ function Contact() {
 
     if (!name) return setError("Field name is not allowed to be empty!");
     if (!email) return setError("Field email is not allowed to be empty!");
-    if (!email.includes("@gmail.com"))
-      return setError("Email must be a gmail!");
     if (!message) return setError("Field message is not allowed to be empty!");
 
     emailjs
@@ -44,11 +42,10 @@ function Contact() {
     setEmailSent(true);
   }
 
-  if (error) setTimeout(() => setError(""), 3000);
   if (emailSent) setTimeout(() => setEmailSent(false), 3000);
 
   return (
-    <div id="contact" className="mt-[30%] mb-[30%] pt-[20%]">
+    <div id="contact" className="mt-[30%] pt-[20%]">
       <div className="section">
         <h1 className="section-heading">Contact me</h1>
         <div className="section-description">
@@ -56,48 +53,87 @@ function Contact() {
             If you want to talk to me about something feel free to use the form
           </p>
         </div>
-        <form ref={form} className="mt-7 space-y-2 relative">
+        <form ref={form} className="mt-7 space-y-2">
           <div className="group overflow-x-hidden">
             <input
               type="text"
-              placeholder="Name"
-              className="contact-input w-full"
+              placeholder={error.includes("name") ? `${error}` : `Name`}
+              className={
+                error.includes("name")
+                  ? `contact-input w-full placeholder:text-red-500`
+                  : `contact-input w-full`
+              }
               name="from_name"
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => {
+                setName(e.target.value);
+                setError("");
+              }}
             />
-            <div className="bar-animation"></div>
+            {error.includes("name") & !name ? (
+              <div className="bg-red-500 h-[1px] bar-error-aniamtion"></div>
+            ) : (
+              <div className="bar-animation"></div>
+            )}
           </div>
           <div className="group overflow-x-hidden">
             <input
               type="text"
-              placeholder="Email"
-              className="contact-input w-full"
+              placeholder={error.includes("email") ? `${error}` : `Email`}
+              className={
+                error.includes("email")
+                  ? `contact-input w-full placeholder:text-red-500`
+                  : `contact-input w-full`
+              }
               name="from_email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => {
+                setEmail(e.target.value);
+                setError("");
+              }}
             />
-            <div className="bar-animation"></div>
+            {error.includes("email") & !email ? (
+              <div className="bg-red-500 h-[1px] bar-error-aniamtion"></div>
+            ) : (
+              <div className="bar-animation"></div>
+            )}
           </div>
           <div className="group overflow-x-hidden">
             <textarea
               name="message"
               cols="30"
               rows="7"
-              className="contact-input w-full"
-              placeholder="Message"
+              placeholder={error.includes("message") ? `${error}` : `Message`}
+              className={
+                error.includes("message")
+                  ? `contact-input w-full placeholder:text-red-500`
+                  : `contact-input w-full`
+              }
               value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={(e) => {
+                setMessage(e.target.value);
+                setError("");
+              }}
             ></textarea>
-            <div className="bar-animation"></div>
+            {error.includes("message") & !message ? (
+              <div className="bg-red-500 h-[1px] bar-error-aniamtion"></div>
+            ) : (
+              <div className="bar-animation"></div>
+            )}
           </div>
           <div className="flex items-center space-x-4 relative">
             <button
               type="submit"
-              className="section-btn absolute right-0 -top-4"
+              className="section-btn absolute right-0 -top-4 group w-[13rem]"
               onClick={(e) => sendEmail(e)}
             >
-              Send Message
+              {emailSent ? (
+                <h1 className="text-green-500 group-hover:text-black">
+                  Email sent!
+                </h1>
+              ) : (
+                <h1>Send Message</h1>
+              )}
             </button>
             <div className="flex items-center space-x-2 mt-2">
               <a
@@ -125,16 +161,6 @@ function Contact() {
           </div>
         </form>
       </div>
-      {emailSent && (
-        <h1 className="absolute inset-x-0 mx-auto mt-10 bg-gradient-to-r from-[#13B5D2] to-blue-600 text-white font-bold py-2 w-max px-4 rounded-md email-sent-animation">
-          Email sent!
-        </h1>
-      )}
-      {error && (
-        <h1 className="absolute inset-x-0 mx-auto mt-10 bg-gradient-to-r from-pink-500 to-red-600 text-white font-bold py-2 w-max px-4 rounded-md email-sent-animation">
-          {error}
-        </h1>
-      )}
     </div>
   );
 }
