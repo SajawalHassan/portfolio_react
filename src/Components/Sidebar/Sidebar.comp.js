@@ -2,6 +2,7 @@ import React from "react";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import S from "../../Images/S.png";
 
 import { Link } from "react-scroll";
 
@@ -13,11 +14,7 @@ function Sidebar() {
         smooth={true}
         className="h-[20%] relative grid place-content-center cursor-pointer mt-5 space-y-4 w-max mx-auto p-2"
       >
-        <img
-          src="https://avatars.githubusercontent.com/u/78025409?v=4"
-          alt=""
-          className="w-[10rem] rounded-full mx-auto"
-        />
+        <img src={S} alt="" className="w-[10rem] mx-auto" />
         <p className="text-zinc-500 text-center font-serif">
           Web developer / Game Developer
         </p>

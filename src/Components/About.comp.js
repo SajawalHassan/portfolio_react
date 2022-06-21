@@ -36,6 +36,14 @@ function About() {
               it!
             </p>
           </div>
+          <div className="xl:hidden grid place-content-center pt-5">
+            <img
+              src="https://avatars.githubusercontent.com/u/78025409?v=4"
+              alt=""
+              className="w-[15rem] rounded-full opacity-70"
+              draggable={false}
+            />
+          </div>
         </div>
         <img src={S} alt="" className="hidden xl:block w-[15rem]" />
       </div>
