@@ -14,7 +14,7 @@ function Projects() {
 
   return (
     <div
-      //  className="mt-[50%]"
+      className="w-full flex flex-col items-center"
       data-aos="fade-right"
       // id="projects"
     >

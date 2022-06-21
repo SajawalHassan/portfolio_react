@@ -36,7 +36,7 @@ function Header() {
         <Link
           to="main"
           smooth={true}
-          className="text-pink-600 text-2xl font-extrabold cursor-pointer"
+          className="text-pink-600 text-2xl font-extrabold cursor-pointer hover:ring hover:ring-pink-600 p-1 transition-all duration-500"
         >
           <span className="text-white font-light">I'm</span> Sajawal
         </Link>
