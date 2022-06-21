@@ -14,12 +14,7 @@ function Skills() {
   }, []);
 
   return (
-    <div
-      data-aos="zoom-in"
-      // id="my-skills"
-      // className="pt-[5%]"
-      // className="mt-[50%] pt-[55%] sm:pt-[30%] xl:pt-[20%]"
-    >
+    <div data-aos="zoom-in">
       <section className="section">
         <h1 className="section-heading">My Skills</h1>
         <div className="section-description">

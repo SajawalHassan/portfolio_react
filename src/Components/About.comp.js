@@ -17,23 +17,23 @@ function About() {
           <h1 className="section-heading">Me, Myself and I</h1>
           <div className="section-description text-lg ml-2">
             <p>
-              Hi there, my name is Sajawal Hassan and I am the son of Athar
-              Kharal. I wanted to learn programming because I wanted to create
-              games. I started with Godot and couldn't move onto unity because
-              my computer wasn't good enough but on the positive side that was
-              the reason I went into web-development.
+              Hi there, my name is Sajawal Hassan and Im 10 years old. I am the
+              son of Dr.Athar Kharal. I wanted to learn programming because I
+              wanted to create games. I started with Godot and couldn't move
+              onto Unity because my computer wasn't good enough but on the
+              positive side that was the reason I went into Web-Development.
             </p>
 
             <p>
-              In web-development I learned alot of stuff like HTML5, CSS3,
-              javascript, reactjs, express, mongodb, node and much more. It was
-              a long journey, a journey that took 2 years as of writing this;
+              In Web-Development I learned alot of stuff like HTML5, CSS3,
+              Javascript, Reactjs, Express, Mongodb, Node and much more. It was
+              a long journey, a journey that took 2 years as of this writing;
               but this journey isn't done.
             </p>
 
             <p>
               I still continue on this journey without seeing the end and I love
-              it! I hope this journey never ends no matter what happens to me.
+              it!
             </p>
           </div>
         </div>
