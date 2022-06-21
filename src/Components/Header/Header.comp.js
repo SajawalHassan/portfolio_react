@@ -17,7 +17,7 @@ function Header() {
   }
 
   return (
-    <div className="px-4 py-2 flex items-center justify-between sticky top-0 z-50 bg-[#292828] md:hidden">
+    <div className="sm:px-4 py-2 px-1 flex items-center justify-between sticky top-0 z-50 bg-[#292828] md:hidden">
       <div className="p-1">
         <Link
           to="main"
@@ -117,7 +117,7 @@ function Header() {
                 Contact
               </Link>
             </div>
-            <div className="flex items-center space-x-2 justify-center">
+            <div className="flex items-center space-x-2 justify-center -mt-5">
               <a href="https://github.com/SajawalHassan" target="_black">
                 <GitHubIcon />
               </a>

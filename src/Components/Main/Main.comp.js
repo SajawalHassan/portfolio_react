@@ -4,10 +4,7 @@ import { Link } from "react-scroll";
 
 function Main() {
   return (
-    <div
-      id="main"
-      className="flex flex-col justify-center h-[80vh] text-white pl-16"
-    >
+    <div className="flex flex-col justify-center h-[80vh] text-white pl-16">
       <div className="text-5xl sm:text-6xl 2xl:text-7xl font-semibold">
         <h1>Hi,</h1>
         <h1>

@@ -1,12 +1,25 @@
 import React, { useState } from "react";
 import SkillsBar from "./SkillsBar.comp";
 import SkillsCard from "./SkillsCard.comp";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+import { useEffect } from "react";
 
 function Skills() {
   const [showMore, setShowMore] = useState(false);
 
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div id="my-skills" className="mt-[50%] pt-[1%]">
+    <div
+      data-aos="zoom-in"
+      // id="my-skills"
+      // className="pt-[5%]"
+      // className="mt-[50%] pt-[55%] sm:pt-[30%] xl:pt-[20%]"
+    >
       <section className="section">
         <h1 className="section-heading">My Skills</h1>
         <div className="section-description">

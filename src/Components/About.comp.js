@@ -1,12 +1,17 @@
 import React from "react";
 import S from "../Images/S.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+import { useEffect } from "react";
 
 function About() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div
-      id="about"
-      className="mt-[50%] pt-[30%] lg:pt-[10%] xl:pt-0 2xl:pt-[20%]"
-    >
+    <div data-aos="fade-down">
       <div className="section lg:flex lg:items-center max-w-[90%] sm:max-w-[70%]">
         <div>
           <h1 className="section-heading">Me, Myself and I</h1>

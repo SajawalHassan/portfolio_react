@@ -1,11 +1,23 @@
 import React, { useState } from "react";
 import ProjectsCard from "./ProjectsCard.comp";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+import { useEffect } from "react";
 
 function Projects() {
   const [showMore, setShowMore] = useState(false);
 
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div className="mt-[50%]" id="projects">
+    <div
+      //  className="mt-[50%]"
+      data-aos="fade-right"
+      // id="projects"
+    >
       <div className="section max-w-[80%]">
         <h1 className="section-heading">My Projects</h1>
         <p className="section-description">
