@@ -34,6 +34,11 @@ body {
   background-image: linear-gradient(to bottom right, #313131, #141414);
 }
 
+.header {
+  background-color: #292828;
+  transition: 400ms;
+}
+
 .menu-animation {
   animation: 500ms menu-animation;
 }

@@ -16,8 +16,22 @@ function Header() {
     document.body.style.overflow = "unset";
   }
 
+  const changeBackground = () => {
+    const header = document.getElementById("#header");
+    if (window.scrollY > 80) {
+      header.classList.add("header");
+    } else {
+      header.classList.remove("header");
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
-    <div className="sm:px-4 py-2 px-1 flex items-center justify-between sticky top-0 z-50 bg-[#292828] md:hidden">
+    <div
+      className="sm:px-4 py-2 px-1 flex items-center justify-between sticky top-0 z-50 md:hidden"
+      id="#header"
+    >
       <div className="p-1">
         <Link
           to="main"
