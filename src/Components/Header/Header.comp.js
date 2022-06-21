@@ -10,6 +10,12 @@ import { Link } from "react-scroll";
 function Header() {
   const [menu, setMenu] = useState(false);
 
+  if (menu) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "unset";
+  }
+
   return (
     <div className="px-4 py-2 flex items-center justify-between sticky top-0 z-50 bg-[#292828] md:hidden">
       <div className="p-1">
@@ -60,7 +66,7 @@ function Header() {
           <MenuIcon className="h-10 text-white" />
         </div>
         {menu && (
-          <div className="absolute w-screen h-screen inset-0 bg-gradient-to-br from-[#252525] to-[#141414] text-white menu-animation">
+          <div className="fixed h-screen inset-0 bg-gradient-to-br from-[#252525] to-[#141414] text-white menu-animation">
             <div className="flex items-center justify-between px-4 pt-3">
               <h1 className="text-pink-600 text-2xl font-extrabold">
                 <span className="text-white font-light">I'm</span> Sajawal
