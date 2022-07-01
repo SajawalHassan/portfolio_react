@@ -5,11 +5,16 @@ import Main from "./Components/Main/Main.comp";
 import Projects from "./Components/Projects/Projects.comp";
 import Sidebar from "./Components/Sidebar/Sidebar.comp";
 import Skills from "./Components/Skills/Skills.comp";
+import bgMusic from "./Music/bg_music.mp3";
+import useSound from "use-sound";
 import AnimCursor from "./Components/AnimCursor/AnimCursor.comp";
 
 function App() {
+  const [play] = useSound(bgMusic);
+
   return (
     <div className="flex">
+      <h1 onClick={play}>Play music</h1>
       <AnimCursor />
       <Sidebar />
       <div className="w-screen">

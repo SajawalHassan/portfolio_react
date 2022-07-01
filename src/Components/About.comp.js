@@ -17,8 +17,7 @@ function About() {
           <h1 className="section-heading">Me, Myself and I</h1>
           <div className="section-description text-lg ml-2">
             <p>
-              Hi there, my name is Sajawal Hassan and Im 10 years old. I am the
-              son of Dr.Athar Kharal. I wanted to learn programming because I
+              Hi there, my name is Sajawal Hassan. I wanted to learn programming because I
               wanted to create games. I started with Godot and couldn't move
               onto Unity because my computer wasn't good enough but on the
               positive side that was the reason I went into Web-Development.
