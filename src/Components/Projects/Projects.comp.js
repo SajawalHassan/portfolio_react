@@ -13,11 +13,7 @@ function Projects() {
   }, []);
 
   return (
-    <div
-      className="w-full flex flex-col items-center"
-      data-aos="fade-right"
-      // id="projects"
-    >
+    <div className="w-full flex flex-col items-center" data-aos="fade-right">
       <div className="section max-w-[80%]">
         <h1 className="section-heading">My Projects</h1>
         <p className="section-description">
@@ -28,13 +24,13 @@ function Projects() {
           <div className="mt-5 mx-auto">
             <div className="w-[90%] space-y-8 xl:grid xl:grid-cols-2 xl:space-y-0 xl:gap-8">
               <ProjectsCard
-                projectName="Twitter Clone (In progress)"
-                description="This twitter clone is a MERN project with the backend fully complete but the frontend is in progress."
+                projectName="E-commerce (In progress)"
+                description="This is an e-commerce website made using MERNN (MongoDB, ExpressJS, React Native, Node)."
                 path="https://github.com/SajawalHassan/twitter_clone_mern"
               />
               <ProjectsCard
-                projectName="Reddit Clone (In progress)"
-                description="This reddit clone is a MERN project with the backend fully complete but the frontend is in progress."
+                projectName="Twitter Clone (In progress)"
+                description="This twitter clone is a MERN project with the backend fully complete but the frontend is in progress."
                 path="https://github.com/SajawalHassan/twitter_clone_mern"
               />
               <ProjectsCard

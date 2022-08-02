@@ -21,8 +21,8 @@ function Skills() {
           <p>
             I started my coding journey nearly 2 years ago and at the time of
             writing I have learned technologies such as ReactJS, NextJS, Redux,
-            TailwindCss, Html, Css, Godot, Python, Open-cv, Mediapipe, Django,
-            Express, Mongodb and Javascript
+            TailwindCSS, HTML5, CSS3, Godot, Python, Open-cv, Mediapipe, Django,
+            Express, Mongodb, React Native and Javascript
           </p>
           <p>
             Right now I don't do any sort of work I just make projects for
@@ -35,6 +35,7 @@ function Skills() {
           <SkillsBar text="CSS3" percent="90" />
           <SkillsBar text="Redux / Redux Toolkit" percent="88" />
           <SkillsBar text="Express" percent="85" />
+          <SkillsBar text="React Native" percent="85" />
           <SkillsBar text="ReactJS" percent="83" />
           <SkillsBar text="MongoDB" percent="80" />
           {!showMore ? (
@@ -62,14 +63,18 @@ function Skills() {
             </div>
           )}
         </div>
-        <div className="mt-10  mx-auto space-y-5">
+        <div className="mt-10 mx-auto space-y-5">
           <SkillsCard
-            title="Fullstack developer"
+            title="Fullstack Developer"
             description="Fullstack developer making projects like the Twitter clone, Reddit
         clone, Google clone etc..."
           />
           <SkillsCard
-            title="Game developer"
+            title="App Developer"
+            description="Cross Platform App developer with experience in React Native"
+          />
+          <SkillsCard
+            title="Game Developer"
             description="Game developer with experience in Godot for 1+ year "
           />
         </div>
