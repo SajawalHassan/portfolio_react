@@ -26,7 +26,7 @@ function Projects() {
               <ProjectsCard
                 projectName="E-commerce (In progress)"
                 description="This is an e-commerce website made using MERNN (MongoDB, ExpressJS, React Native, Node)."
-                path="https://github.com/SajawalHassan/twitter_clone_mern"
+                path="https://github.com/SajawalHassan/portfolio_react"
               />
               <ProjectsCard
                 projectName="Twitter Clone (In progress)"
@@ -34,7 +34,7 @@ function Projects() {
                 path="https://github.com/SajawalHassan/twitter_clone_mern"
               />
               <ProjectsCard
-                projectName="Google Clone"
+                projectName="Google Clone (ReactJS)"
                 description="This Google clone is a ReactJs project where the search engine functions with the Google API"
                 path="https://github.com/SajawalHassan/google-clone-react"
               />
@@ -46,24 +46,24 @@ function Projects() {
             </div>
             <div className="xl:grid xl:grid-cols-2 xl:space-y-0 xl:gap-8 hidden xl:w-[90%] mt-10">
               <ProjectsCard
-                projectName="Blog website"
+                projectName="Blog website (NextJS)"
                 built
                 with
                 description="This blog website was built with NextJs in 2 days for school."
                 path="https://github.com/SajawalHassan/blog_website_next"
               />
               <ProjectsCard
-                projectName="Twitch clone"
+                projectName="Twitch clone (ReactJS)"
                 description="This Twitch clone was built with ReactJs."
                 path="https://github.com/SajawalHassan/twitch-clone-react"
               />
               <ProjectsCard
-                projectName="Gesture Volume Control"
+                projectName="Gesture Volume Control (Python)"
                 description="This is a python project that controls your volume based on your gestures."
                 path="https://github.com/SajawalHassan/gesture_volume_control_python"
               />
               <ProjectsCard
-                projectName="Platformer"
+                projectName="Platformer (Godot)"
                 description="This is a Godot project where you can play a platformer."
                 path="https://github.com/SajawalHassan/Platformer2.0"
               />
@@ -80,24 +80,24 @@ function Projects() {
             <div className="space-y-5 show-more-animation">
               <div className="mt-5 w-[90%] space-y-8">
                 <ProjectsCard
-                  projectName="Blog website"
+                  projectName="Blog website (NextJS)"
                   built
                   with
                   description="This blog website was built with NextJs in 2 days for school."
                   path="https://github.com/SajawalHassan/blog_website_next"
                 />
                 <ProjectsCard
-                  projectName="Twitch clone"
+                  projectName="Twitch clone (ReactJS)"
                   description="This Twitch clone was built with ReactJs."
                   path="https://github.com/SajawalHassan/twitch-clone-react"
                 />
                 <ProjectsCard
-                  projectName="Gesture Volume Control"
+                  projectName="Gesture Volume Control (Python)"
                   description="This is a python project that controls your volume based on your gestures."
                   path="https://github.com/SajawalHassan/gesture_volume_control_python"
                 />
                 <ProjectsCard
-                  projectName="Platformer"
+                  projectName="Platformer (Godot)"
                   description="This is a Godot project where you can play a platformer."
                   path="https://github.com/SajawalHassan/Platformer2.0"
                 />
