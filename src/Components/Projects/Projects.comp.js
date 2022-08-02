@@ -39,7 +39,7 @@ function Projects() {
                 path="https://github.com/SajawalHassan/google-clone-react"
               />
               <ProjectsCard
-                projectName="Instagram Clone"
+                projectName="Instagram Clone (Django)"
                 description="This instagram clone is Django project where you can create and view posts"
                 path="https://github.com/SajawalHassan/instagram_clone_django"
               />
